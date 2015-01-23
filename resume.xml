@@ -1,0 +1,197 @@
+<resume>
+  <general>
+    <name>Wesley Vrancken</name>
+    <location>Bree, Belgium</location>
+    <phone-number>
+      <home>+3289462451</home>
+      <mobile>+32479602429</mobile>
+    </phone-number>
+    <email>wlee@isabot.net</email>
+    <nationality>Belgian</nationality>
+  </general>
+  <education>
+    <education-entry start="2009" end="2012">
+      <school>PHL, Hasselt (BE)</school>
+      <major>Bachelor in Applied Computer Science: Application Development</major>
+    </education-entry>
+    <education-entry start="2008" end="2009">
+      <school>UHasselt, Hasselt (BE)</school>
+      <major>Physics</major>
+    </education-entry>
+    <education-entry start="2007" end="2008">
+      <school>KULeuven, Leuven (BE)</school>
+      <major>Civil Engineering</major>
+    </education-entry>
+  </education>
+  <skills>
+    <languages>
+      <language-entry id="1" >C/C++</language-entry>
+      <language-entry id="2">C#</language-entry>
+      <language-entry id="3">Java</language-entry>
+      <language-entry id="4">Javascript/Coffeescript</language-entry>
+      <language-entry id="5">Python</language-entry>
+      <language-entry id="6">Objective-C</language-entry>
+      <language-entry id="7">Octave</language-entry>
+      <language-entry id="8">Scala</language-entry>
+      <language-entry id="9">Ruby</language-entry>
+      <language-entry id="10">Go</language-entry>
+      <language-entry id="11">PHP</language-entry>
+      <language-entry id="12">Bash</language-entry>
+    </languages>
+    <frameworks>
+      <framework-entry id="1" language="1">Boost</framework-entry>
+      <framework-entry id="2" language="1">Qt</framework-entry>
+      <framework-entry id="3" language="1">UnitTest++</framework-entry>
+      <framework-entry id="4" language="2">ASP.NET MVC</framework-entry>
+      <framework-entry id="5" language="2">Ext.NET</framework-entry>
+      <framework-entry id="6" language="2">WPF</framework-entry>
+      <framework-entry id="7" language="2">XNA</framework-entry>
+      <framework-entry id="8" language="3">JSF</framework-entry>
+      <framework-entry id="9" language="3">IceFaces</framework-entry>
+      <framework-entry id="10" language="3">PrimeFaces</framework-entry>
+      <framework-entry id="11" language="3">GWT</framework-entry>
+      <framework-entry id="12" language="3">GWTP</framework-entry>
+      <framework-entry id="13" language="3">SmartGWT</framework-entry>
+      <framework-entry id="14" language="3">Vaadin</framework-entry>
+      <framework-entry id="15" language="3">JavaFX</framework-entry>
+      <framework-entry id="16" language="3">JUnit</framework-entry>
+      <framework-entry id="17" language="4">Angular.js</framework-entry>
+      <framework-entry id="18" language="4">Backbone.js</framework-entry>
+      <framework-entry id="19" language="4">Bower</framework-entry>
+      <framework-entry id="20" language="4">Grunt.js</framework-entry>
+      <framework-entry id="21" language="4">Require.js</framework-entry>
+      <framework-entry id="22" language="4">Underscore.js</framework-entry>
+      <framework-entry id="23" language="4">Jasmine</framework-entry>
+      <framework-entry id="24" language="4">JQuery</framework-entry>
+      <framework-entry id="25" language="4">Kendo UI</framework-entry>
+      <framework-entry id="26" language="8">Play Framework</framework-entry>
+      <framework-entry id="27" language="8">Scalatra</framework-entry>
+      <framework-entry id="28" language="8">ScalaTest</framework-entry>
+      <framework-entry id="29" language="2">Entity Framework</framework-entry>
+      <framework-entry id="30" language="3">Hibernate</framework-entry>
+      <framework-entry id="31" language="5">Django</framework-entry>
+      <framework-entry id="32" language="3">OpenCMS</framework-entry>
+      <framework-entry id="33" language="5">Numpy/Scipy</framework-entry>
+      <framework-entry id="34" language="4">OpenLayers</framework-entry>
+      <framework-entry id="35" language="6">Cocos2d</framework-entry>
+    </frameworks>
+    <others>
+      <other-entry id="1">XML</other-entry>
+      <other-entry id="2">XSD</other-entry>
+      <other-entry id="3">XSLT</other-entry>
+      <other-entry id="4">HTML/CSS</other-entry>
+      <other-entry id="5">Git</other-entry>
+      <other-entry id="6">SVN</other-entry>
+      <other-entry id="7">TFS</other-entry>
+      <other-entry id="8">GDAL</other-entry>
+    </others>
+    <software>
+      <software-entry id="1">Linux</software-entry>
+      <software-entry id="2">MacOS</software-entry>
+      <software-entry id="3">Emacs</software-entry>      
+      <software-entry id="4">Visual Studio</software-entry>
+      <software-entry id="5">Eclipse</software-entry>
+      <software-entry id="6">X-Code</software-entry>
+      <software-entry id="7">Jenkins</software-entry>
+      <software-entry id="8">Geoserver</software-entry>
+    </software>
+  </skills>
+  <jobs>
+    <job start="9-2014">
+      <company>OSOP</company>
+      <location>Volcan, Panama</location>
+      <position>Lead Developer</position>
+      <description>
+	Full stack development of web application for showing real-time earthquakes in specified areas.
+	Bare metal programming of STM32F4 chip in combination with multiple WiFi modules (CC3000, CC3100, Ack.me Mantis).
+	Maintenance of existing configuration tools in Go, Python and PHP.
+      </description>
+      <technology languages="1,5,10,11,4" frameworks="18,19,22,24,31" others="5,4" software="1,3,5" />
+    </job>
+    <job start="9-2014">
+      <company>Boaz Consultancy</company>
+      <location>Remote</location>
+      <position>Web Developer</position>
+      <description>
+	Developing back office web applications for display of real-time banking data.
+      </description>
+      <technology languages="2,4" frameworks="4,17,25,19,20" others="4,6" software="4,3" />
+    </job>
+    <job start="11-2013" end="8-2014" >
+      <company>Key Technology</company>
+      <location>Hasselt, Belgium</location>
+      <position>Software Engineer</position>
+      <description>
+	Developing software implementations in multiple domains relating to optical sorting machines and complementing equipment. 
+	Creating utility software for engineers and other support staff.
+	Internal Jenkins build tool development using Ruby.
+	Managing Jenkins CI server for C++ and Python projects. 
+      </description>
+      <technology languages="1,5,9" frameworks="1,2,3,33" others="1,2,3,5,6" software="1,3,5,7" />
+    </job>
+    <job start="2-2013" end="8-2013" >
+      <company>Ubicast</company>
+      <location>Tokyo, Japan</location>
+      <position>Web Developer</position>
+      <description>
+	Web application and module development using OpenCMS.
+	In charge of corporate website redesign and reimplementation.
+      </description>
+      <technology languages="3,4,8" frameworks="16,18,19,20,21,22,23,24,32" others="1,2,4,5" software="1,3,5" />
+    </job>
+    <job start="10-2012" end="1-2013" >
+      <company>Cegeka</company>
+      <location>Hasselt, Belgium</location>
+      <position>IT Consultant</position>
+      <description>
+	Analist-Developer at Heraeus Electro Nite's instrumentation department.
+	Designing and developing WPF/C# applications for use on Windows 7 Embedded measurement devices.
+	Field testing software at aluminum ovens.
+	Mathematical analysis of graphs generated in field tests using NumPy and SciPy to prototype before creating a C# implementation.
+	Communicating with engineers for confirmation of analyses and resolving hardware bugs.
+      </description>
+      <technology languages="2,5" frameworks="6,33" others="7" software="4" />
+    </job>
+    <job start="8-2012" end="9-2013" >
+      <company>Fenego</company>
+      <location>Hasselt, Belgium</location>
+      <position>IT Consultant</position>
+      <description>
+	Created a Java based testing tool which generated valid XML files based on an XSD.
+	These XML files were then run through web services to check for potential logical errors in the back-end code.
+      </description>
+      <technology languages="3" frameworks="15" others="1,2" software="4" />
+    </job>
+    <job start="3-2012" end="8-2012" >
+      <company>Cinemaray</company>
+      <location>Nagoya, Japan</location>
+      <position>Developer (intern)</position>
+      <description>
+	Created and modified iOS enterprise applications utilizing Unity3D and/or the Vuforia AR SDK.
+	Worked with XNA / C# to create a Microsoft PixelSense application.
+	Worked on a custom mapping application using Geoserver to serve user specified map overlays to a OpenLayers web application.
+      </description>
+      <technology languages="2,3,4,6" frameworks="24,34,35" others="5,8" software="2,6,8" />
+    </job>
+    <job start="8-2011" end="9-2011" >
+      <company>Fenego</company>
+      <location>Hasselt, Belgium</location>
+      <position>IT Consultant</position>
+      <description>
+	Created a monitoring and management system for servers. Used GWT(P) and SmartGWT in combination with Java to make the management front-end.
+	The to-be-monitored servers were initialized with a Python script after which they were completely configurable through the management front-end. 
+	A Tornado server was used to receive data from and to return new scripts to client servers. 
+	A JMX server was used in conjunction with a ManageEngine instance to create a easily configurable dashboard.
+      </description>
+      <technology languages="3,5,12" frameworks="11,12,13" others="4,6" software="1,5" />
+    </job>
+  </jobs>
+  <languages>
+    <language ability="5">Dutch</language>
+    <language ability="5">English</language>
+    <language ability="4">French</language>
+    <language ability="3">German</language>
+    <language ability="3">Japanese</language>
+    <language ability="2">Spanish</language>
+  </languages>
+</resume>
