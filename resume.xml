@@ -12,7 +12,7 @@
   <education>
     <education-entry start="2009" end="2012">
       <school>PHL, Hasselt (BE)</school>
-      <major>Bachelor in Applied Computer Science: Application Development</major>
+      <major>Bachelor in Applied Computer Science</major>
     </education-entry>
     <education-entry start="2008" end="2009">
       <school>UHasselt, Hasselt (BE)</school>
@@ -103,14 +103,14 @@
       <position>Lead Developer</position>
       <description>
 	Full stack development of web application for showing real-time earthquakes in specified areas.
-	Bare metal programming of STM32F4 chip in combination with multiple WiFi modules (CC3000, CC3100, Ack.me Mantis).
+	Bare metal programming of STM32 based prototypes in combination with WiFi modules (TI CC3x00, Ack.me Mantis, OpenWrt based chips).
 	Maintenance of existing configuration tools in Go, Python and PHP.
       </description>
       <technology languages="1,5,10,11,4" frameworks="18,19,22,24,31" others="5,4" software="1,3,5" />
     </job>
     <job start="9-2014">
       <company>Boaz Consultancy</company>
-      <location>Remote</location>
+      <location>Remote/Volcan, Panama</location>
       <position>Web Developer</position>
       <description>
 	Developing back office web applications for display of real-time banking data.
@@ -178,10 +178,9 @@
       <location>Hasselt, Belgium</location>
       <position>IT Consultant</position>
       <description>
-	Created a monitoring and management system for servers. Used GWT(P) and SmartGWT in combination with Java to make the management front-end.
-	The to-be-monitored servers were initialized with a Python script after which they were completely configurable through the management front-end. 
-	A Tornado server was used to receive data from and to return new scripts to client servers. 
-	A JMX server was used in conjunction with a ManageEngine instance to create a easily configurable dashboard.
+	Created a centralized monitoring and management system for servers. Used GWT(P) and SmartGWT in combination with Java to make the management front-end.
+	Configured a Tornado server for pushing staticstics to and pulling settings scripts from. 
+	Implemented a JMX server to use in conjunction with a ManageEngine instance to create a easily configurable dashboard.
       </description>
       <technology languages="3,5,12" frameworks="11,12,13" others="4,6" software="1,5" />
     </job>
