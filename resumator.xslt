@@ -19,16 +19,16 @@
 	<style type="text/css"><![CDATA[
 	@font-face {
 	font-family: "Lemon/Milk";
-	src: url("LemonMilk.otf");
-	font-weight: normal;
-	font-style: normal;
+	  src: url("fonts/LemonMilk.otf");
+	  font-weight: normal;
+	  font-style: normal;
 	}
 	
 	@font-face {
-	font-family: "Bitstream Vera Sans Mono";
-	src: url("VeraMono.ttf");
-	font-weight: normal;
-	font-style: normal;
+	  font-family: "Bitstream Vera Sans Mono";
+	  src: url("fonts/VeraMono.ttf");
+	  font-weight: normal;
+	  font-style: normal;
 	}
 
 	svg {
@@ -36,32 +36,35 @@
 	}
 
 	text {
-	font-family: "Bitstream Vera Sans Mono";
-	font-size: 3em;
+	  font-family: "Bitstream Vera Sans Mono";
+	  font-size: 3em;
 	}
 	
 	#name-title {
-	font-family: "Lemon/Milk";
-	font-size: 7em;	       
+	  font-family: "Lemon/Milk";
+	  font-size: 7em;	       
 	}
 	
 	.big-section-title {
-	font-family: "Lemon/Milk";
-	font-size: 4em;
+	  font-family: "Lemon/Milk";
+	  font-size: 4em;
 	}
 	
 	.experience-field {
-	fill: #696969;
-	font-size:4em;
+	  fill: #696969;
+	  font-size:4em;
+	}
+	
+	.experience-field .minor {
+	  font-size: 0.75em;
+	  fill: #B2B2B2;
 	}
 	
 	.section-title {
-	font-family: "Lemon/Milk";
-	font-size: 3em;
+	  font-family: "Lemon/Milk";
+	  font-size: 3em;
 	}
 	
-	.general-field {
-	}
 	]]></style>
       </defs>
       <xsl:apply-templates select="general|languages|education|jobs" />      
@@ -75,7 +78,7 @@
     <line  x1="80%" y1="175.5" x2="95%" y2="175.5" stroke="black" stroke-width="10px" />
 
     <!-- GENERAL -->
-    <image x="5%" y="351" width="2%" height="50" xlink:href="info21.svg" />
+    <image x="5%" y="351" width="2%" height="50" xlink:href="img/info21.svg" />
     <line x1="5%" y1="412" x2="45%" y2="412" stroke="black" stroke-width="6px" />
     <text class="section-title" x="8%" y="403.65">Personal Details</text>
     
@@ -98,7 +101,7 @@
 
   <xsl:template match="languages">
     <!-- LANGUAGES -->
-    <image x="50%" y="351" width="2%" height="50" xlink:href="planet5.svg" />
+    <image x="50%" y="351" width="2%" height="50" xlink:href="img/planet5.svg" />
     <line x1="50%" y1="412" x2="95%" y2="412" stroke="black" stroke-width="6px" />
     <text class="section-title" x="53%" y="403.65">Languages</text>
 
@@ -118,7 +121,7 @@
       </text>
       <xsl:variable name="starXOffset" select="0.95" />
       <xsl:for-each select="1 to @ability" >
-	<image width="1.5%" height="52" xlink:href="star174.svg" >
+	<image width="1.5%" height="52" xlink:href="img/star174.svg" >
 	  <xsl:attribute name="x"><xsl:value-of select="format-number($starXOffset - position() * 0.02, '0.00%')"/></xsl:attribute>
 	  <xsl:attribute name="y"><xsl:value-of select="3510 * ($yPos - 0.011)" /></xsl:attribute>
 	</image>
@@ -132,7 +135,7 @@
     <xsl:variable name="minYOffset" select="max(($languageHeight, $generalHeight)) + 0.025" />
 
     <!-- EDUCATION -->
-    <image x="5%" width="4%" height="140" xlink:href="books30.svg" >
+    <image x="5%" width="4%" height="140" xlink:href="img/books30.svg" >
       <xsl:attribute name="y"><xsl:value-of select="3510 * $minYOffset" /></xsl:attribute>
     </image>
     <line x1="5%" x2="95%" stroke="black" stroke-width="8px" >
@@ -171,7 +174,7 @@
     <xsl:variable name="educationHeight" select="$eduMinYOffset + count(//education/*) * 0.03 + 0.04" />
     <xsl:variable name="minYOffset" select="$educationHeight" />
 
-    <image x="5%" width="4%" height="140" xlink:href="man379.svg" >
+    <image x="5%" width="4%" height="140" xlink:href="img/man379.svg" >
       <xsl:attribute name="y"><xsl:value-of select="3510 * $minYOffset" /></xsl:attribute>
     </image>
     <line x1="5%" x2="95%" stroke="black" stroke-width="8px" >
@@ -222,13 +225,28 @@
 
       <text class="experience-field" x="8%">
 	<xsl:attribute name="y"><xsl:value-of select="3510 * ($yOffset)" /></xsl:attribute>
-	<tspan font-weight="bold"><xsl:value-of select="$job/position" /></tspan><xsl:value-of select="concat(' at ', $job/company)" />
+	<tspan font-weight="bold"><xsl:value-of select="$job/position" /></tspan>
+	<xsl:value-of select="concat(' at ', $job/company)" />
+	<tspan class="minor" dx="2%" >
+	  <xsl:value-of select="$job/location" />
+	  <xsl:choose>
+	    <xsl:when test="not($job/@end)">
+	      <xsl:value-of select="concat(' from ', $job/@start)" />
+	    </xsl:when>
+	    <xsl:otherwise>
+	      <xsl:value-of select="concat(' from ', $job/@start, ' to ', $job/@end)" />
+	    </xsl:otherwise>
+	  </xsl:choose>
+	</tspan>
       </text>
-      <text x="91%" y="31%" text-anchor="end">
-	<xsl:attribute name="y"><xsl:value-of select="3510 * ($yOffset)" /></xsl:attribute>
-	<xsl:value-of select="$job/location" />
-      </text>
-      <!--<image x="92%" y="29%" width="3%" height="3%" xlink:href="location50.svg" />-->
+      <!-- <text x="91%" y="31%" text-anchor="end"> -->
+      <!-- 	<xsl:attribute name="y"><xsl:value-of select="3510 * ($yOffset)" /></xsl:attribute> -->
+      <!-- 	<xsl:value-of select="$job/location" /> -->
+      <!-- </text> -->
+      <!-- <text class="experience-date" x="8%"> -->
+      <!-- 	<xsl:attribute name="y"><xsl:value-of select="3510 * ($yOffset+0.015)" /></xsl:attribute> -->
+	
+      <!-- </text> -->
        
       <text class="experience-desc" x="8%">
 	<xsl:attribute name="y"><xsl:value-of select="3510 * ($yOffset+0.02)" /></xsl:attribute>
@@ -244,7 +262,7 @@
       </text>
       
       <xsl:variable name="bubbleX" select="0.08" />
-      <xsl:variable name="bubbleY" select="$yOffset + count($descrLines) * 0.015" />
+      <xsl:variable name="bubbleY" select="$yOffset + 0.005  + count($descrLines) * 0.015" />
 
       <xsl:call-template name="tag-loop">
 	<xsl:with-param name="tags" select="$all" />
