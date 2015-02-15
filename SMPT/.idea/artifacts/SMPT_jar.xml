@@ -1,0 +1,31 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SMPT:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SMPT_jar</output-path>
+    <root id="archive" name="SMPT.jar">
+      <element id="module-output" name="SMPT" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.5.0/itextpdf-5.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-rasterizer/1.6-1/batik-rasterizer-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-transcoder/1.6-1/batik-transcoder-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-bridge/1.6-1/batik-bridge-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-gvt/1.6-1/batik-gvt-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-awt-util/1.6-1/batik-awt-util-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-util/1.6-1/batik-util-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-gui-util/1.6-1/batik-gui-util-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-ext/1.6-1/batik-ext-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xml-apis/xmlParserAPIs/2.0.2/xmlParserAPIs-2.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-script/1.6-1/batik-script-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-svg-dom/1.6-1/batik-svg-dom-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-dom/1.6-1/batik-dom-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-css/1.6-1/batik-css-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-xml/1.6-1/batik-xml-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xerces/xercesImpl/2.2.1/xercesImpl-2.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-parser/1.6-1/batik-parser-1.6-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/fop/fop/0.20.5/fop-0.20.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/batik/batik-1.5-fop/0.20-5/batik-1.5-fop-0.20-5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xalan/xalan/2.4.1/xalan-2.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/avalon-framework/avalon-framework/4.0/avalon-framework-4.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/com.springsource.org.apache.commons.cli/1.2.0/com.springsource.org.apache.commons.cli-1.2.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
