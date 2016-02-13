@@ -212,10 +212,12 @@
 					          then (normalize-space(substring($line, 1, max(index-of(string-to-codepoints(substring($line, 1, 100)), 32)))), 
 						  normalize-space(substring($line, max(index-of(string-to-codepoints(substring($line, 1, 100)), 32)) + 1)))
 					          else normalize-space($line)" />
+
+      <xsl:variable name="roundedPage" select="round($paramYOffset)" />
       <xsl:variable name="yOffset">
 	<xsl:choose>
-	  <xsl:when test="$paramYOffset &lt; 1.0 and ($paramYOffset + 0.02 + count($descrLines) * 0.015 + ((string-length(string-join($all, ' ')) div 100) + 1) * 0.03 + 0.015) &gt; 1.0">
-	    <xsl:value-of select="1.05" />
+	  <xsl:when test="$paramYOffset &lt; $roundedPage and ($paramYOffset + 0.02 + count($descrLines) * 0.015 + ((string-length(string-join($all, ' ')) div 100) + 1) * 0.03 + 0.015) &gt; $roundedPage">
+	    <xsl:value-of select="$roundedPage + 0.05" />
 	  </xsl:when>
 	  <xsl:otherwise>
 	    <xsl:value-of select="$paramYOffset" />
@@ -225,7 +227,7 @@
 
       <text class="experience-field" x="8%">
 	<xsl:attribute name="y"><xsl:value-of select="3510 * ($yOffset)" /></xsl:attribute>
-	<tspan font-weight="bold"><xsl:value-of select="$job/position" /></tspan>
+	<tspan font-weight="bolder"><xsl:value-of select="$job/position" /></tspan>
 	<xsl:value-of select="concat(' at ', $job/company)" />
 	<tspan class="minor" dx="2%" >
 	  <xsl:value-of select="$job/location" />
@@ -273,7 +275,7 @@
 
       <xsl:call-template name="job-loop" >
 	<xsl:with-param name="jobs" select="$jobs[position() > 1]" />
-	<xsl:with-param name="paramYOffset" select="$yOffset + 0.02 + count($descrLines) * 0.015 + ((string-length(string-join($all, ' ')) div 100) + 1) * 0.03 + 0.015"/>
+	<xsl:with-param name="paramYOffset" select="$yOffset + 0.02 + count($descrLines) * 0.015 + ((0.01 * string-length(string-join($all, ''))) + (count($all) * 0.08)) * 0.03 + 0.015"/>
       </xsl:call-template>
     </xsl:if>
   </xsl:template>
